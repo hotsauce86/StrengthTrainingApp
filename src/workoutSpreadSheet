@@ -1,0 +1,24 @@
+{
+  "WORKOUT": [
+    {
+      "workout" : "BENCH",
+      "weight" : 120,
+      "reps": 10,
+      "sets": 3
+    },
+    {
+      "workout" : "DEADLIFT",
+      "weight" : 140,
+      "reps": 10,
+      "sets": 3
+    },
+
+    {
+      "workout" : "BAR",
+      "weight" : 60,
+      "reps": 10,
+      "sets": 5
+    }
+  ]
+
+}

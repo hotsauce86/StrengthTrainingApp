@@ -65,7 +65,7 @@ public class StrengthTraining {
         System.out.println("number of excersices: " + chestDays.size());
         System.out.println("total weight moved: " + weightTotal);
 
-        
+
     }
 
 
@@ -151,6 +151,8 @@ public class StrengthTraining {
 
         ChestDay someChestDay = new ChestDay(workout, weight, sets, reps);
         return someChestDay;
+
+
     }
 
 
