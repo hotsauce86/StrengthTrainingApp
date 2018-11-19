@@ -2,6 +2,7 @@ import javax.swing.*;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
+import com.google.gson.*;
 
 public class StrengthTraining {
 
@@ -48,7 +49,8 @@ public class StrengthTraining {
    static List<ChestDay> chestDays = new ArrayList<>();
    static  List<LegDay>  legDays = new ArrayList<>();
 
-
+   Gson gson = new Gson();
+   
 
     public static void main(String[] args){
 
