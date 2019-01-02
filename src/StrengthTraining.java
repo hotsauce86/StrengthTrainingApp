@@ -1,4 +1,8 @@
 import javax.swing.*;
+import javax.xml.transform.Result;
+import java.io.BufferedReader;
+import java.io.FileReader;
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
@@ -49,8 +53,29 @@ public class StrengthTraining {
    static List<ChestDay> chestDays = new ArrayList<>();
    static  List<LegDay>  legDays = new ArrayList<>();
 
-   Gson gson = new Gson();
-   
+
+
+   public static void jsonWorkoutMethod(){
+       Gson gson = new Gson();
+       BufferedReader br = null;
+
+       System.out.println("/////JSON READ START//////");
+       try{
+            br = new BufferedReader(new FileReader ("workoutSpreadSheet.json"));
+            Result result = gson.fromJson(br, Result.class);
+
+            if (results != null ){
+
+            }
+       } catch (IOException e){
+           e.printStackTrace();
+           System.out.println(e.getMessage());
+       }
+       finally {
+           System.out.println("/////JSON READ FINISHED//////");
+       }
+
+   }
 
     public static void main(String[] args){
 
